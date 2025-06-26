@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a0a0a0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #888;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 shadow-lg rounded-b-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-bold mb-2 md:mb-0">John Doe</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-200 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16 px-6 text-center shadow-md rounded-lg mx-auto my-8 max-w-4xl">
+        <div class="container mx-auto">
+            <img src="https://placehold.co/150x150/CBD5E1/4A5568?text=JD" alt="John Doe" class="rounded-full mx-auto mb-6 shadow-xl border-4 border-blue-500">
+            <h2 class="text-5xl font-extrabold text-gray-800 mb-4 leading-tight">Hi, I'm a <span class="text-blue-600">Passionate Developer</span></h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Crafting elegant and efficient solutions to complex problems. Specializing in web development with a focus on front-end technologies.
+            </p>
+            <a href="#projects" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-gray-50 py-16 px-6 shadow-md rounded-lg mx-auto my-8 max-w-4xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-lg text-gray-700 leading-relaxed">
+                    <p class="mb-4">
+                        I'm a dedicated software developer with X years of experience in building high-quality web applications. My journey in tech started with a fascination for how digital experiences come to life, leading me to master various programming languages and frameworks.
+                    </p>
+                    <p class="mb-4">
+                        My expertise spans across <span class="font-semibold text-blue-600">JavaScript, React, Node.js, and modern CSS frameworks like Tailwind CSS</span>. I'm always eager to learn new technologies and apply them to create innovative and user-friendly solutions.
+                    </p>
+                    <p>
+                        Beyond coding, I enjoy problem-solving, collaborating with teams, and contributing to open-source projects.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-inner border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Vue.js</li>
+                        <li>Back-end: Node.js, Express.js, Python, Flask</li>
+                        <li>Databases: MongoDB, PostgreSQL, Firebase/Firestore</li>
+                        <li>Tools & Technologies: Git, Webpack, Babel, Docker, RESTful APIs</li>
+                        <li>Styling: Tailwind CSS, Styled Components, Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16 px-6 shadow-md rounded-lg mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/E2E8F0/4A5568?text=Project+1" alt="Project 1" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">E-commerce Store</h3>
+                    <p class="text-gray-700 mb-4">
+                        A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features user authentication, product catalog, shopping cart, and order processing.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                        <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                        <span class="bg-red-200 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
+                    </div>
+                    <a href="#" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/E2E8F0/4A5568?text=Project+2" alt="Project 2" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Task Management App</h3>
+                    <p class="text-gray-700 mb-4">
+                        A responsive task management application with real-time updates using Firebase Firestore. Allows users to create, update, and delete tasks.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Vue.js</span>
+                        <span class="bg-orange-200 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firestore</span>
+                        <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                    </div>
+                    <a href="#" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/E2E8F0/4A5568?text=Project+3" alt="Project 3" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Blog Platform</h3>
+                    <p class="text-gray-700 mb-4">
+                        A content-rich blog platform with admin panel for post management. Built using Python Flask and PostgreSQL.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-pink-200 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
+                        <span class="bg-teal-200 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                    </div>
+                    <a href="#" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/E2E8F0/4A5568?text=Project+4" alt="Project 4" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Recipe Finder App</h3>
+                    <p class="text-gray-700 mb-4">
+                        An application that allows users to search for recipes using an external API. Implemented with React and fetch API.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">API Integration</span>
+                    </div>
+                    <a href="#" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/E2E8F0/4A5568?text=Project+5" alt="Project 5" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Weather Dashboard</h3>
+                    <p class="text-gray-700 mb-4">
+                        Interactive weather dashboard providing current and forecast weather data based on user's location or search input.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML/CSS</span>
+                    </div>
+                    <a href="#" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/400x250/E2E8F0/4A5568?text=Project+6" alt="Project 6" class="rounded-lg mb-4 w-full h-auto object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Simple Game</h3>
+                    <p class="text-gray-700 mb-4">
+                        A fun, simple browser-based game developed using pure JavaScript, HTML Canvas, and CSS.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-200 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 
