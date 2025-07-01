@@ -1,9 +1,11 @@
-*COMPANY - CODTECH IT SOLUTION
+# PERSONAL PORTFOLIO WEBPAGE
+ *COMPANY - CODTECH IT SOLUTION
 *NAME - ATUL ANAND
 *INTERN ID - CT08DF2197
 *DOMAIN - FRONT EEND
 *DURATION - 6 WEEK
 *MENTOR - NEELA SANTHOSH
+# Descrption
 The core objective of Task 3 is to create an HTML registration form that captures various details from users who wish to register for a particular event. The form should include typical fields required for such a scenario—full name, email address, contact number, gender, date of birth, address, city, state, pin code, event category, and a few others as required.
 
 This task not only assesses a student's or developer’s proficiency in structuring forms but also in enhancing usability using CSS. Students are expected to style the form using an external stylesheet, ensuring the design is modern and responsive. They must also apply appropriate validation techniques to make sure the data collected is accurate and complete.
